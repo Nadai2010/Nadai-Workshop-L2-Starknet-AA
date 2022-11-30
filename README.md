@@ -1,14 +1,18 @@
-# Tutorial del Workshop de L2-Starknet sobre AA
+<div align="center">
+    <img src="./Imagenes/Starknet.png" style="width: 300px">
+    <h1>Tutorial del Workshop de L2-Starknet sobre AA<h1>
 
-Primero agradecer a la comunidad [L2 Español](https://t.me/s/l2espaniol) y [Starknetes](https://t.me/s/starknet_es) por hacer esta serie de Workshop en Español sobre Starknet. Aquí pueden encontrar la lista completa así como el canal de Youtube oficial. Recuerden apoyar a las Repo y a los Videos.
+Primero agradecer a la comunidad [L2 Español](https://t.me/s/l2espaniol) y [Starknetes](https://t.me/s/starknet_es) por hacer estas series de Workshops en Español sobre Starknet. Aquí pueden encontrar la lista completa así como el canal de Youtube oficial. 
+⭐⭐ Recuerden apoyar a las Repo y a los Videos⭐⭐
+</div>
 
-- [Workshop Series StarkNet 01 - Introducción a L2](https://www.youtube.com/watch?v=s6vmWYkZoa8)
-- [Workshop Series StarkNet 02 - Ecosistema StarkNet](https://www.youtube.com/watch?v=KxUhBM3a6oM)
-- [Workshop Series StarkNet 03 - Creando en StarkNet](https://www.youtube.com/watch?v=elXLye41_b8&list=PL5LoUunXvIgLCdVerVBPZ2G3bR51Re251&index=3)
-- [Workshop Series StarkNet 04 - Desplegando en StarkNet Parte 1: Creando un NFT](https://www.youtube.com/watch?v=y3rJnaNRiGI&list=PL5LoUunXvIgLCdVerVBPZ2G3bR51Re251&index=4)
-- [Workshop Series StarkNet 05 - Desplegando en StarkNet Parte 2: URI y Metadata para un ERC-721](https://www.youtube.com/watch?v=SnaZjW2p3Io&list=PL5LoUunXvIgLCdVerVBPZ2G3bR51Re251&index=5)
-- [Workshop Series StarkNet 06 - Account Abstraction Pt. 1](https://www.youtube.com/watch?v=flnTFmEnjEQ)
-- [Workshop Series StarkNet 07 - Account Abstraction Pt. 2](https://www.youtube.com/watch?v=6vdP329tK_I)
+01. [Workshop Series StarkNet 01 - Introducción a L2](https://www.youtube.com/watch?v=s6vmWYkZoa8)
+02. [Workshop Series StarkNet 02 - Ecosistema StarkNet](https://www.youtube.com/watch?v=KxUhBM3a6oM)
+03. [Workshop Series StarkNet 03 - Creando en StarkNet](https://www.youtube.com/watch?v=elXLye41_b8&list=PL5LoUunXvIgLCdVerVBPZ2G3bR51Re251&index=3)
+04. [Workshop Series StarkNet 04 - Desplegando en StarkNet Parte 1: Creando un NFT](https://www.youtube.com/watch?v=y3rJnaNRiGI&list=PL5LoUunXvIgLCdVerVBPZ2G3bR51Re251&index=4)
+05. [Workshop Series StarkNet 05 - Desplegando en StarkNet Parte 2: URI y Metadata para un ERC-721](https://www.youtube.com/watch?v=SnaZjW2p3Io&list=PL5LoUunXvIgLCdVerVBPZ2G3bR51Re251&index=5)
+06. [Workshop Series StarkNet 06 - Account Abstraction Pt. 1](https://www.youtube.com/watch?v=flnTFmEnjEQ)
+07. [Workshop Series StarkNet 07 - Account Abstraction Pt. 2](https://www.youtube.com/watch?v=6vdP329tK_I)
 
 - [Omar Espejel EN Tutoriales Walking-With-Starknet](https://github.com/starknet-edu/walking-with-starknet/tree/master/tutorials/tutorials/EN)
 - [Nadai FORK ES Tutoriales Walking-With-Starknet](https://github.com/Nadai2010/walking-with-starknet/tree/master/tutorials/tutorials/ES)
@@ -20,7 +24,7 @@ Puede revisar toda la información oficial en [README](/README.md) para no exten
 ---
 ## Configuración de Entorno 
 
-Recomendamos trabajar dentro de un entorno virtual Python, pero también puede instalar el paquete Cairo directamente. Puede revisar [Ajustes de Entorno Starknet](https://www.starknet.io/docs/quickstart.html) y chequear su ultima VERSIÓN, para este tutorial tuvimos que actualizar a la versión `0.10.2` ya queno daba algunos errores en comandos `Starknet`, asi que la descargamos desde [aquí directamente](https://github.com/starkware-libs/cairo-lang/releases/tag/v0.10.2). Para crear e ingresar al entorno virtual, abrimos una terminal (Ctrl+Alt+T):
+Recomendamos trabajar dentro de un entorno virtual Python, pero también puede instalar el paquete Cairo directamente. Puede revisar [Ajustes de Entorno Starknet](https://www.starknet.io/docs/quickstart.html) y chequear su ultima VERSIÓN, para este tutorial tuvimos que actualizar a la versión `0.10.2` ya que nos daba algunos errores en comandos `Starknet`, asi que la descargamos desde [aquí directamente](https://github.com/starkware-libs/cairo-lang/releases/tag/v0.10.2). Para crear e ingresar al entorno virtual, abrimos una terminal (Ctrl+Alt+T):
 
 ```bash
 python3.9 -m venv ~/cairo_venv
@@ -93,6 +97,8 @@ En esta repo copiaremos `0x0570031f2e21b102201bc2ae04749c58aee4b7ae470d2f847a686
 
 * [HASH](https://goerli.etherscan.io/tx/0x2b4d65baea08e2d6553c61bf77447e2dcaaae77e75caa3266dfe85b107c0ee2f)
 
+---
+
 ## Deploy Contrato de Cuenta
 
 Ahora que ya tiene ETH para pagar su `Deploy` procederemos a buscar en nuestros archivos (Normalmente ocultos por un `.`, puede mostrarlos todos en Linux usando (Ctrl + h) en la carpeta que quiera buscar, o en terminal (ls -a) le aparecerán los ocultos) en mi caso estaban en `userNadai/.starknet_accounts/starknet_open_zeppelin_accounts.json`. Este muestra información relevante para la creación de cada contrato de cuenta. Por ejemplo, para la  `NadaiAA`  que creamos anteriormente tenemos:
@@ -138,7 +144,7 @@ Ahora verificamos que en [Portafolio](https://testnet-2.starkscan.co/contract/0x
 ---
 ## Conclusiones finales
 
-En este breve tutorial hemos querido reforzar como crear un Contrato de Cuenta en Starknet calculando primero su dirección, envianrle fondos y hacer el Deploy de este mismo Contrato de Cuenta. Hemos usado los comando de `Starknet` sin usar `Protostar`. Aunque también podrá realizarlos con Contratos modificados que no sean de Oppen Zeeppellin, como podría ser [pz_modified_account.cairo](/src/oz_modified_account.cairo), revise los videos para usar `Protostar`. 
+En este breve tutorial hemos querido reforzar como crear un Contrato de Cuenta en Starknet calculando primero su dirección, enviarle fondos y hacer el Deploy de este mismo Contrato de Cuenta. Hemos usado los comando de `Starknet` sin usar `Protostar`. Aunque también podrá realizarlos con Contratos modificados que no sean de Oppen Zeeppellin, como podría ser [oz_modified_account.cairo](/src/oz_modified_account.cairo), revise los videos para usar `Protostar`. 
 
 Para poder comprender el verdadero poder de las AA en Starknet y profundizar es sus casos de uso puede revisar los siguientes link.
 
@@ -146,7 +152,7 @@ Para poder comprender el verdadero poder de las AA en Starknet y profundizar es 
 - [Workshop Series StarkNet 07 - Account Abstraction Pt. 2](https://www.youtube.com/watch?v=6vdP329tK_I)
 - [Traducción ES Tutoriales Walking-With-Starknet](https://github.com/Nadai2010/walking-with-starknet/tree/master/tutorials/tutorials/ES)
 
-También puede revisar estos grandes articulos, algunos compartidos en este último grand WorkShop `L2 Español- Starknet`
+También puede revisar estos grandes articulos, algunos compartidos en este último gran WorkShop `L2 Español- Starknet`
 
 - [Deployar Smart en Goerli 2](https://medium.com/@santiagodgalvan/deploying-a-contract-on-starknet-testnet-2-goerli-2-96803cba0f14)
 - [Crea tu primer juego en cadena en Starknet](https://mirror.xyz/matchboxdao.eth/G8i8OUJsArc2F5v3ZGvsnRtYyzohTzQrzlkB_5atSHw)
