@@ -1,6 +1,6 @@
 <div align="center">
-    <img src="./Imagenes/Starknet.png" style="width: 300px">
-    <h1>Tutorial del Workshop de L2-Starknet sobre AA<h1>
+    <img src="./imágenes/l2stark.png" style="width: 300px">
+    <h2>Tutorial del Workshop de L2-Starknet sobre AA<h2>
 
 Primero agradecer a la comunidad [L2 Español](https://t.me/s/l2espaniol) y [Starknetes](https://t.me/s/starknet_es) por hacer estas series de Workshops en Español sobre Starknet. Aquí pueden encontrar la lista completa así como el canal de Youtube oficial. 
 ⭐⭐ Recuerden apoyar a las Repo y a los Videos⭐⭐
