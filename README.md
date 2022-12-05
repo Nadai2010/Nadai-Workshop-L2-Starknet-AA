@@ -1,10 +1,21 @@
 <div align="center">
-    <img src="./imágenes/l2stark.png" style="width: 300px">
-    <h2>Tutorial del Workshop de L2-Starknet sobre AA<h2>
-
-Primero agradecer a la comunidad [L2 Español](https://t.me/s/l2espaniol) y [Starknetes](https://t.me/s/starknet_es) por hacer estas series de Workshops en Español sobre Starknet. Aquí pueden encontrar la lista completa así como el canal de Youtube oficial. 
-⭐⭐ Recuerden apoyar a las Repo y a los Videos⭐⭐
+    <img src="./imágenes/Recap Workshop AA.png" style="width: 900px">
+    <h2>Recap Workpshop ¿Cómo deployar una Account Abstraction en Starknet?<h2>
 </div>
+
+Este documento es un Recap de los Workshop de las comunidades [L2 Español](https://t.me/s/l2espaniol) y [Starknetes](https://t.me/s/starknet_es).  Soy Nadai y quiero agradecer enormemente el esfuerzo realizado de ambos equipos para enseñarnos más sobre L2, Starknet y Cairo en estos talleres. En este documento en especial nos centraremos en los Workshop 6-7 sobre Account Abtraction, aprenderemos como calcular una address antes de ser deployada y crear nuestro Contrato de Cuenta.
+
+## ¿Qué es la Abstraction Account?
+
+> Definición 1: AA es cuando un **contrato inteligente puede pagar sus propias transacciones** ([Martin Triay, Devcon 6](https://www.youtube.com/watch?v=Osc_gwNW3Fw)). En otras palabras, los contratos abstractos (o contratos inteligentes de cuentas) pueden pagar las transacciones. Tenga en cuenta que no es lo mismo que cuentas de propiedad externa o billeteras inteligentes.
+
+> Definición 2: AA es **abstracción de validación**. En L1 solo hay una forma de validar transacciones (recuperar una dirección de una firma, mirar esa dirección en el estado, determinar si el nonce está bien para la transacción que se envió y si la cuenta tiene saldo suficiente para realizar la transacción) . Con AA, **abstrae el proceso de validación**: utiliza diferentes tipos de firmas, primitivas criptográficas, procesos de ejecución, etc. ([lightclient, Devcon 6](https://app.devcon.org/schedule/9mvqce)) .
+
+**Nota: En computación, el término abstracción se usa para generalizar algo. En este caso, estamos generalizando los contratos inteligentes: de la existencia de Externally Owned Contracts (EOA) y Contract Accounts (CA)  a simplemente contratos inteligentes.*
+
+
+Aquí pueden encontrar la lista completa de los Workshop, así como el canal de Youtube oficial. ⭐⭐ Recuerden apoyar a las Repo y a los Videos⭐⭐
+
 
 01. [Workshop Series StarkNet 01 - Introducción a L2](https://www.youtube.com/watch?v=s6vmWYkZoa8)
 02. [Workshop Series StarkNet 02 - Ecosistema StarkNet](https://www.youtube.com/watch?v=KxUhBM3a6oM)
